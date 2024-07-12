@@ -1,0 +1,9 @@
+package basics;
+
+public class ThreadExample11Synchronization {
+
+	public static void main(String[] args) {
+		ThreadExample11Synchrinization 
+	}
+
+}

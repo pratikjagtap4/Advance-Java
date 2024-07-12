@@ -1,0 +1,7 @@
+package arraylist;
+
+public class Snippet {
+	 let a = 10;
+	    let c = 20;
+}
+

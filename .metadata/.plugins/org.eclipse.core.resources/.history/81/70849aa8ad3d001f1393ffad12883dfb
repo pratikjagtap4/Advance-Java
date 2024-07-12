@@ -1,0 +1,55 @@
+package basics;
+
+public class ThreadExample16ThreadLock {
+
+	
+		
+		String red = "Red";
+		String pink = "Pink";
+		
+		public void display()
+		{
+			synchronized(red)
+			{
+				System.out.println("Red is used by display");
+			
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+				
+					e.printStackTrace();
+				}
+				
+				synchronized(pink)
+				{
+					System.out.println("pink is used by display");
+				}
+			}
+			
+			
+		}
+		public void info()
+		{
+			synchronized(red)
+			{
+				System.out.println("Red is used by display");
+			
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+				
+					e.printStackTrace();
+				}
+				
+				synchronized(pink)
+				{
+					System.out.println("pink is used by display");
+				}
+			}
+			
+			
+		}
+
+	
+
+}

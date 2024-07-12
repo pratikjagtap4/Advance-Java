@@ -1,0 +1,17 @@
+package lambdaexp;
+
+public class Ex2CarBrands {
+
+	public static void main(String[] args) {
+		
+		Ex2Cars car1 =  (name) -> {return name} ;
+		System.out.println(car1.details("Thar"));
+		
+		Ex2Cars car2 = (name) -> name;
+		System.out.println(car2.details("Onmi"));
+		
+		Ex2Cars car3 = (name) -> name;
+		System.out.println(car3.details("nano"));
+	}	
+
+}

@@ -1,0 +1,5 @@
+package lambdaexp;
+
+public interface WorldCup {
+	String position();
+}
