@@ -10,6 +10,7 @@ public class ArrayList02 {
 		al.add("Success");
 		al.add("Training");
 		al.add("Institute");
+		al.add("Pune");
 		System.out.println(al);
 	}
 
