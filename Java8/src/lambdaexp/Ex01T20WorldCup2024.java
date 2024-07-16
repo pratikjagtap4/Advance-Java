@@ -3,7 +3,7 @@ package lambdaexp;
 interface WorldCup {
 	String position();
 }
-public class Ex1T20WorldCup2024 implements WorldCup {
+public class Ex01T20WorldCup2024 implements WorldCup {
 	
 	public String position() {
 
@@ -12,7 +12,7 @@ public class Ex1T20WorldCup2024 implements WorldCup {
 	
 	public static void main(String[] args)
 	{
-		WorldCup winner = new Ex1T20WorldCup2024();
+		WorldCup winner = new Ex01T20WorldCup2024();
 		System.out.println(winner.position());
 		
 		
