@@ -39,14 +39,14 @@ public class Ex11ConsumerInterface {
 		
 		System.out.println("Enter your Age");
 		int age = sc.nextInt();
-		
+		//Consumer Interface
 		Consumer<String> c1 = Student ::displayName;
 		c1.accept(name);
 		
 		Consumer<Integer> c2 = Student ::displayAge;
 		c2.accept(age);
 		
-
+		//BiConsumer Interface
 		BiConsumer<String,Integer> c3 = Student ::displayInfo;
 		c3.accept(name , age);
 		
