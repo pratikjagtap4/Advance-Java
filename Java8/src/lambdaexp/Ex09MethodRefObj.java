@@ -25,7 +25,7 @@ class State {
 		System.out.println();
 	}
 }
-public class Ex9MethodRefObj {
+public class Ex09MethodRefObj {
 
 	public static void main(String[] args) {
 	State s1 = new State("Maharashtra" , "Udhhav Thackray" , "Mumbai" , 28.5 );
