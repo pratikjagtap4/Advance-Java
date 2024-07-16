@@ -51,7 +51,7 @@ public class Ex08MethodReferencing implements Description{
 		String name3 = "Lucky";
 		int age3 = 25;
 		
-		Description d3 = (n , a)-> CyberSuccess.java(n , a);
+		Description d3 =  CyberSuccess::java;
 		d2.display(name3, age3);
 		
 		
