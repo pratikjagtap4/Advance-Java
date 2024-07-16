@@ -5,7 +5,7 @@ interface Ex2Cars {
 }
 
 
-public class Ex2CarBrands {
+public class Ex02CarBrands {
 
 	public static void main(String[] args) {
 		
