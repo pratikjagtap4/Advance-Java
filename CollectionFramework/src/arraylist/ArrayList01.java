@@ -16,6 +16,7 @@ public class ArrayList01 {
 		al.add('x');
 		System.out.println(al);
 		al.add(null);
+		al.add(null);
 		System.out.println(al);
 	}
 
