@@ -25,7 +25,7 @@ class CyberSuccess {
 }
 
 
-public class Ex8MethodReferencing implements Description{
+public class Ex08MethodReferencing implements Description{
 
 	public static void main(String[] args) {
 		
@@ -34,7 +34,7 @@ public class Ex8MethodReferencing implements Description{
 		String name ="Pratik";
 		int age = 23;
 		
-		Ex8MethodReferencing obj = new Ex8MethodReferencing();
+		Ex08MethodReferencing obj = new Ex08MethodReferencing();
 		obj.display(name,age);
 		
 		
