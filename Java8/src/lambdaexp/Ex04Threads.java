@@ -1,6 +1,6 @@
 package lambdaexp;
 
-public class Ex4Threads {
+public class Ex04Threads {
 
 	public static void main(String[] args) {
 		Runnable r1 = new Runnable() {

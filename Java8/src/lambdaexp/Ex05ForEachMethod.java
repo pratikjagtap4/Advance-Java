@@ -3,7 +3,7 @@ package lambdaexp;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Ex5ForEachMethod {
+public class Ex05ForEachMethod {
 
 	public static void main(String[] args) {
 		ArrayList<String> movies = new ArrayList();
