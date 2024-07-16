@@ -23,7 +23,7 @@ class Ex3CarDetails {
 }
  
  
-public class Ex3CarData {
+public class Ex03CarData {
 	 
 	 public static void main(String[] args) {
 		 Ex3CarDetails c1 = new Ex3CarDetails("Mahindra" , "Thar" , "Black" , 1700000 , 5);
