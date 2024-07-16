@@ -1,0 +1,30 @@
+package lambdaexp;
+
+interface StateInter{
+	void display(State s);
+}
+
+class State {
+	
+	String name ;
+	String cm;
+	String capital;
+	int weather;
+	
+	public State(String name, String cm, String capital, int weather) {
+		this.name = name;
+		this.cm = cm;
+		this.capital = capital;
+		this.weather = weather;
+	}
+	
+	
+}
+public class Ex9MethodRefObj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

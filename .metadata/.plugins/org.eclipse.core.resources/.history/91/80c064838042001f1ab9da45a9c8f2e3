@@ -1,0 +1,22 @@
+package lambdaexp;
+
+interface Description {
+	void display(String name);
+}
+
+class CyberSucces {
+	static int age = 23;
+	
+	static void java(String name ) {
+		System.out.println(name + " - " + age);
+	}
+}
+public class Ex8Lambda {
+
+	public static void main(String[] args) {
+		String name ="Pratik";
+		Description d1 = (n)-> CyberSucces.java(n);
+		d1.display(name);
+	}
+
+}

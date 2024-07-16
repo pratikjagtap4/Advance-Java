@@ -1,0 +1,47 @@
+package lambdaexp;
+
+interface Description {
+	void display(String name, int age );
+}
+
+class CyberSucces {
+	
+	
+	static void java(String name , int age ) {
+		System.out.println(name + " - " + age);
+	}
+}
+public class Ex8Lambda implements Description{
+
+	public static void main(String[] args) {
+		String name ="Pratik";
+		int age = 23;
+		
+		Ex8Lambda obj = new Ex8Lambda();
+//		Description d1 = (n , a)-> CyberSucces.java(n , a);
+		
+		obj.display(name,age);
+		
+		
+		
+		
+		
+		
+		
+		String name2 = "Swapnil";
+		int age2 = 24;
+		Description d2 = CyberSucces::java;
+		d2.display(name2, age2);
+		
+	}
+
+	public  void display(String name, int age) {
+		CyberSucces.java(name, age);
+		
+	}
+	
+
+	
+	
+
+}
