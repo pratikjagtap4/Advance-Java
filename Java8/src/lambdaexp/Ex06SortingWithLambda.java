@@ -18,7 +18,7 @@ class Movie {
 
 }
 
-public class Ex6SortingWithLambda {
+public class Ex06SortingWithLambda {
 
 	public static void main(String[] args) {
 		ArrayList<Movie> movies = new ArrayList<Movie>();
