@@ -24,7 +24,7 @@ class FlightDetails{
 }
 
 
-public class Ex7Flights {
+public class Ex07Flights {
 
 	public static void main(String[] args) {
 		ArrayList<FlightDetails> hs1 = new ArrayList<>();
