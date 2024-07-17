@@ -11,7 +11,7 @@ public class ThreadExample04 {
 			}
 		};
 		
-		Thread t1 = new Thread(r1 , "1");
+		Thread t1 = new Thread(r1 , "t1");
 
 		Runnable r2 = new Runnable() {
 			public void run()
@@ -19,7 +19,7 @@ public class ThreadExample04 {
 				System.out.println("How Are You" + " " + Thread.currentThread().getName());
 			}
 		};
-		Thread t2 = new Thread(r2 , "2");
+		Thread t2 = new Thread(r2 , "t2");
 
 		
 		Runnable r3 = new Runnable() {
@@ -28,7 +28,7 @@ public class ThreadExample04 {
 				System.out.println("I am Fine" + " " + Thread.currentThread().getName());
 			}
 		};
-		Thread t3 = new Thread(r3 , "3");
+		Thread t3 = new Thread(r3 , "t3");
 		
 		t1.start();
 		t2.start();
