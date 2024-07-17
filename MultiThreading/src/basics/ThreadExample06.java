@@ -22,10 +22,11 @@ public class ThreadExample06 extends Thread{
 		ThreadExample06 t3 = new ThreadExample06();
 		
 		
+		t3.start();
+//		t3.start();
 		t1.start();
 		t2.start();
 //		t1.start();
-		t3.start();
 	}
 
 }
