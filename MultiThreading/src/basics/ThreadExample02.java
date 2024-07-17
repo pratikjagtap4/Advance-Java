@@ -11,7 +11,7 @@ public class ThreadExample02  implements Runnable {
 		Thread t2 = new Thread(r2 , "Swapnil");
 		t2.start();
 		
-		Runnable r3 = new ThreadExample02();
+		ThreadExample02 r3 = new ThreadExample02();
 		Thread t3 = new Thread(r3 , "Lucky");
 		t3.start();
 
