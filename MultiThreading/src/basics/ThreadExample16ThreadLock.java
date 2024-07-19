@@ -17,7 +17,7 @@ public class ThreadExample16ThreadLock {
 				
 				synchronized(pink)
 				{
-					System.out.println("pink is used by display");
+					System.out.println("pink is used by display method");
 				}
 			}
 			
