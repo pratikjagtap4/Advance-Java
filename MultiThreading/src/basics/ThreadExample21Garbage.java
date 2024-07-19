@@ -18,6 +18,8 @@ public class ThreadExample21Garbage {
 		
 		g1 = g2;
 		System.gc();
+		
+		
 	}
 
 }
