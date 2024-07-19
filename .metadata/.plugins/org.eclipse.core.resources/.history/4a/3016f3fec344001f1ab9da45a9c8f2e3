@@ -1,0 +1,30 @@
+package lambdaexp;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter number of items ");
+		int n = sc.nextInt(); 
+		
+		System.out.println("Please enter your name: ");
+		String name  = sc.nextLine();
+		System.out.println(name);
+			
+		ArrayList<String> product = new  ArrayList<String> ();
+		for(int i = 0 ; i<n ; i++)
+		{
+			System.out.println("Enter product name");
+			String prod = sc.nextLine();
+			
+			product.add(prod);
+		}
+		
+		
+	}
+
+}

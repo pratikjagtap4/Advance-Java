@@ -1,0 +1,10 @@
+package lambdaexp;
+
+public class Ex14StreamApiObj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

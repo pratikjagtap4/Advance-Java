@@ -1,0 +1,52 @@
+package basics;
+
+public class ThreadExample14Block {
+	public  void display(int a , int b)
+	{
+		int count =1;
+//		for(int i = 1;i<=5;i++)
+//		{
+//			System.out.println(Thread.currentThread().getName());
+//		}
+		System.out.println("Before Synchonization " + count);
+		synchronized(this)
+		{
+			
+			for(int i = a ; i <= b; i++)
+			{
+//				System.out.println(i);
+				count++;
+			}
+		}
+		
+		System.out.println("after Synchonization " + count);
+
+	}
+
+	
+	public static void main(String[] args) {
+		ThreadExample14Block obj = new ThreadExample14Block();
+		ThreadExample14Block obj2 = new ThreadExample14Block();
+		Runnable r1 = new Runnable() {
+			public void run()
+			{
+			
+				obj.display(10,20);
+			}
+		};
+		Thread t1 = new Thread(r1);
+		
+		t1.start();
+		
+		Runnable r2 = new Runnable() {
+			public void run()
+			{
+				obj2.display(50,70);
+			}
+		};
+		Thread t2 = new Thread(r2);
+		
+		t2.start();
+
+	}
+}
