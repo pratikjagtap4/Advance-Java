@@ -25,7 +25,7 @@ class Bank
 	{
 		
 			balance = balance +amount ;
-			System.out.println("Your new balance is " + balance);
+			System.out.println("Your new balance is " + balance + " rs");
 	}
 }
 
