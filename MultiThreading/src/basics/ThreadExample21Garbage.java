@@ -1,6 +1,6 @@
 package basics;
 
-public class ThreadExample10Garbage {
+public class ThreadExample21Garbage {
 
 	public void finalize()
 	{
@@ -8,9 +8,9 @@ public class ThreadExample10Garbage {
 	}
 	
 	public static void main(String[] args) {
-		ThreadExample10Garbage g1 = new ThreadExample10Garbage();
-		ThreadExample10Garbage g2 = new ThreadExample10Garbage();
-		ThreadExample10Garbage g3 = new ThreadExample10Garbage();
+		ThreadExample21Garbage g1 = new ThreadExample21Garbage();
+		ThreadExample21Garbage g2 = new ThreadExample21Garbage();
+		ThreadExample21Garbage g3 = new ThreadExample21Garbage();
 		
 //		g1 = null;
 //		g2.hashCode();

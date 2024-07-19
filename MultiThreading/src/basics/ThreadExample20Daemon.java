@@ -1,6 +1,6 @@
 package basics;
 
-public class ThreadExample09Daemon extends Thread{
+public class ThreadExample20Daemon extends Thread{
 	
 	public  void run()
 	{
@@ -22,9 +22,9 @@ public class ThreadExample09Daemon extends Thread{
 
 	public static void main(String[] args) {
 		 
-		ThreadExample09Daemon t1 = new ThreadExample09Daemon();
-		ThreadExample09Daemon t2 = new ThreadExample09Daemon();
-		ThreadExample09Daemon t3 = new ThreadExample09Daemon();
+		ThreadExample20Daemon t1 = new ThreadExample20Daemon();
+		ThreadExample20Daemon t2 = new ThreadExample20Daemon();
+		ThreadExample20Daemon t3 = new ThreadExample20Daemon();
 		
 		t1.setDaemon(true);
 		t1.start();

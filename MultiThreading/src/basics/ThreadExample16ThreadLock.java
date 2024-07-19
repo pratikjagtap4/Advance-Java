@@ -13,12 +13,7 @@ public class ThreadExample16ThreadLock {
 			{
 				System.out.println("Red is used by display");
 			
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
 				
-					e.printStackTrace();
-				}
 				
 				synchronized(pink)
 				{
@@ -32,18 +27,13 @@ public class ThreadExample16ThreadLock {
 		{
 			synchronized(pink)
 			{
-				System.out.println("pink is used by display");
+				System.out.println("pink is used by info");
 			
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
 				
-					e.printStackTrace();
-				}
 				
 				synchronized(red)
 				{
-					System.out.println("red is used by display");
+					System.out.println("red is used by info");
 				}
 			}
 			

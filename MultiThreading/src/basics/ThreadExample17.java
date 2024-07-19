@@ -12,11 +12,13 @@ class Bank
 	
 	public void withdraw(int amount)
 	{
-		if(amount<=balance)
-		{
+			if(balance<=amount)
+			{
+				System.out.println("Insufficient balance");
+			}
 			balance = balance - amount ;
 			System.out.println("Your new balance is " + balance);
-		}
+		
 	}
 	
 	public void deposit(int amount)
@@ -35,7 +37,7 @@ public class ThreadExample17 {
 		Thread t1 = new Thread() {
 			public void run()
 			{
-				for(int i = 1 ; i<= 5 ; i++)
+				for(int i = 1 ; i<= 6 ; i++)
 				{
 					cust1.withdraw(250);
 				}
