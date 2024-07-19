@@ -15,7 +15,7 @@ class BankDetails {
 
 	public synchronized void deposit(int amount) {
 		balance = balance + amount;
-		System.out.println("your balance is " + balance);
+		System.out.println("your account balance is " + balance);
 		notify();
 	}
 }
