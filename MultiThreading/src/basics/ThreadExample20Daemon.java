@@ -29,6 +29,8 @@ public class ThreadExample20Daemon extends Thread{
 		t1.setDaemon(true);
 		t1.start();
 		t2.start();
+		
+		
 		t3.start();
 	}
 
