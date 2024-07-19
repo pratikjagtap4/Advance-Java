@@ -24,6 +24,7 @@ public class ThreadExample16DeadLock {
 		t1.join();
 		t2.start();
 		
+		
 
 	}
 }
