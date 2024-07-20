@@ -1,5 +1,0 @@
-package lambdaexp;
-
-public interface Ex2Cars {
-	public String details(String name , int price);
-}
