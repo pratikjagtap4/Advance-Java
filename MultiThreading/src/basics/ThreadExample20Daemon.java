@@ -5,10 +5,10 @@ public class ThreadExample20Daemon extends Thread{
 	public  void run()
 	{
 		
-//		for(int i = 1 ; i<= 5; i++)
-//		{
-//			System.out.println(i);
-//		}
+		for(int i = 1 ; i<= 5; i++)
+		{
+			System.out.println(i);
+		}
 		if(Thread.currentThread().isDaemon())
 		{
 			System.out.println(Thread.currentThread().getName() + " is daemon thread");
