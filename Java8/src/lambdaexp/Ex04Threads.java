@@ -10,7 +10,7 @@ public class Ex04Threads {
 		};
 		Thread t1 = new Thread(r1 , "ChinnaSwammy");
 		
-		Runnable r2 = ()->System.out.println(Thread.currentThread());;
+		Runnable r2 = ()->System.out.println(Thread.currentThread());
 		
 		Thread t2 = new Thread(r2 , "MuthhuSwammy");
 		Thread t3 = new Thread(r2 , "Venugopal");
