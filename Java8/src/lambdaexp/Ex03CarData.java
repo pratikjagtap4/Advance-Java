@@ -36,6 +36,6 @@ public class Ex03CarData {
 			 System.out.println(c.company + " " + c.name  + " " + c.color + " "  + c.price + " " + c.seating  );
 		 };
 		 car1.details(c1);
-		 
+		 car1.details(c2);
 	 }
  }
