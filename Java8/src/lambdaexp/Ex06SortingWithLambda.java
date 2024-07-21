@@ -2,11 +2,12 @@ package lambdaexp;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 class Movie {
 	String name;
 	int year;
-	double rating;
+	Double rating;
 	String actor;
 
 	public Movie(String name, int year, double rating, String actor) {
@@ -28,20 +29,7 @@ public class Ex06SortingWithLambda {
 		movies.add(new Movie("KabirSingh" , 2019, 7.5 , "Shaheed"));
 		movies.add(new Movie("Tarzan" , 2006 , 8.5, "Aaayesha"));
 		
-		Collections.sort(movies , (mov1 , mov2)->{
-			if(mov1.rating>mov2.rating)
-			{
-				return -1;
-			}
-			else if(mov1.rating<mov2.rating)
-			{
-				return 1;
-			}
-			else {				
-				return 0;
-			}
-			
-		});
+		Collections.sort(movies , (mov1 , mov2)-> mov1.rating.compareTo(mov2.rating));
 		
 		movies.forEach((m)-> System.out.println(m.name + " " + m.year + " " + m.rating +  " "  + m.actor));
 	}
