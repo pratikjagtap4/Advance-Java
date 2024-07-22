@@ -1,0 +1,44 @@
+package dateandtime;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+public class Ex01Date {
+
+	public static void main(String[] args) {
+		LocalTime start = LocalTime.now();
+		
+		//date
+		LocalDate today = LocalDate.now();
+		System.out.println(today);
+		
+		LocalDate yesterday = today.minusDays(20);
+		System.out.println(yesterday);
+		
+		LocalDate tommorow = today.plusDays(50);
+		System.out.println(tommorow);
+		
+		int day = today.getDayOfYear();
+		System.out.println(day);
+		
+		int month = today.getMonthValue();
+		System.out.println(month);
+		
+		// time
+		LocalTime now = LocalTime.now();
+		System.out.println(now);
+		
+		System.out.println(now.getHour());
+		System.out.println(now.plusHours(5));
+		System.out.println(now.minusHours(23));
+		
+		LocalDateTime dnt = LocalDateTime.now();
+		System.out.println(dnt);
+		
+		LocalTime stop = LocalTime.now();
+		
+		System.out.println(stop - start);
+	}
+
+}
