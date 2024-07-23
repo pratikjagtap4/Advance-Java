@@ -1,5 +1,8 @@
 package lambdaexp;
 
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 interface Description {
 	void display(String name, int age );
 }
@@ -73,7 +76,13 @@ public class Ex08MethodReferencing implements Description{
 		int age5 = 23;
 		
 		Description d5 = CyberSuccess :: new;
-		d5.display(name5, age4);
+		d5.display(name5, age5);
+		
+		// calling random objects instance method
+		
+		Consumer<String> d6 = System.out::println;
+		d6.accept("pratik");
+		
 		
 		
 	}
