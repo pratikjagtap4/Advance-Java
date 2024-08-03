@@ -10,6 +10,7 @@ public class ThreadExample05Sleep extends Thread {
 			catch (InterruptedException e){
 				System.out.println(e);
 			}
+			
 			System.out.println((char)i);
 		}
 	}
@@ -19,7 +20,7 @@ public class ThreadExample05Sleep extends Thread {
 		ThreadExample05Sleep t1 = new ThreadExample05Sleep();
 		t1.start();
 		
-		
+	
 		Runnable r2 = new Runnable() {
 			public void run() {
 				for(int i = 1 ; i<= 5; i++) {
