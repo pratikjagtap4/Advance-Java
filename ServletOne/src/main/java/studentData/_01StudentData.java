@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,10 +21,13 @@ public class _01StudentData extends HttpServlet {
 
 	Connection con;
 	
-	public void init() throws ServletException {
-		String url = "jdbc:mysql://localhost:3306/studentsData";
-		String userName = "root";
-		String password = "root@123";
+	public void init(ServletConfig config) throws ServletException {
+		
+		ServletContext context = config.getServletContext();
+		
+		String url = context.getInitParameter("dburl");
+		String userName = context.getInitParameter("dbuser");
+		String password = context.getInitParameter("dbpass");
 		
 		try {
 			
