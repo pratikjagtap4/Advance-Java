@@ -28,6 +28,9 @@ public class Ex07checkedException {
 		// java.sql.SQLSyntaxErrorException:  is checked exception that compiler throws when sql query is wrong this means the code will not get compile, but the the JDBCDriver here will execute the the correct queies no matter code runs or not  
 		System.out.println(r3 + " data inserted");
 		
+		int r4 = smt.executeUpdate("insert into countries values('England' , 'London' , 02)");
+		System.out.println(r4 + " data inserted");
+		
 	}
 
 }
