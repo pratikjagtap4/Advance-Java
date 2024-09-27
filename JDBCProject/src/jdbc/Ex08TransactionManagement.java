@@ -30,6 +30,7 @@ public class Ex08TransactionManagement {
 			// java.sql.SQLSyntaxErrorException:  is checked exception that compiler throws when sql query is wrong this means the code will not get compile, but the the JDBCDriver here will execute the the correct queies no matter code runs or not  
 			System.out.println(r3 + " data inserted");
 			
+			con.commit();
 			
 		}
 		catch(Exception e) {
