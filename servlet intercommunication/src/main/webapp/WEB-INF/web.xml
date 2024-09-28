@@ -77,5 +77,135 @@
   		<url-pattern>/registerRedirect</url-pattern>
   </servlet-mapping>
 
+<!-- filter -->
+<servlet>
+		<servlet-name>filterServlet</servlet-name>
+		<servlet-class>filter._01servletDemo</servlet-class>
+</servlet>
+
+<servlet-mapping>
+		<servlet-name>filterServlet</servlet-name>
+		<url-pattern>/welc</url-pattern>
+</servlet-mapping>
+
+<filter>
+		<filter-name>filterOne</filter-name>
+		<filter-class>filter._01filterDemo</filter-class>
+</filter>
+
+<filter-mapping>
+		<filter-name>filterOne</filter-name>
+		<url-pattern>/welc</url-pattern>
+</filter-mapping>
+
+
+<!-- filter Login -->
+
+<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>filter._02LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginFilter</url-pattern>
+</servlet-mapping>
+
+<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>filter._02LoginFilter</filter-class>
+</filter>
+<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/loginFilter</url-pattern>
+</filter-mapping>
+
+
+
+<!-- Session Management -->
+<servlet>
+		<servlet-name>SessionManagement</servlet-name>
+		<servlet-class>sessions._01SessionManagement</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>SessionManagement</servlet-name>
+		<url-pattern>/sessionSource</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>TargetServlet</servlet-name>
+		<servlet-class>sessions._01TargetServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>TargetServlet</servlet-name>
+		<url-pattern>/target</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AnotherServlet</servlet-name>
+		<servlet-class>sessions._01AnotherTarget</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>AnotherServlet</servlet-name>
+		<url-pattern>/maharaj</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+<servlet>
+		<servlet-name>practiseLogin</servlet-name>
+		<servlet-class>sessions._02LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>practiseLogin</servlet-name>
+		<url-pattern>/session</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<servlet-class>sessions._02WelcomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/welcomeUser</url-pattern>
+</servlet-mapping>
+
+<!-- Login Logout -->
+
+<servlet>
+		<servlet-name>loginlogoutsession</servlet-name>
+		<servlet-class>loginLogout._01LoginSessionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>loginlogoutsession</servlet-name>
+		<url-pattern>/inoutsession</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>menu</servlet-name>
+		<servlet-class>loginLogout._01MenuServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>menu</servlet-name>
+		<url-pattern>/menu</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>loginLogout._01LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
 
 </web-app>
