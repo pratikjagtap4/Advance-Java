@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="employee1" class="com.employeeInfo.EmployeeDetails">  
+	<property name="id" value="101"></property>  
+	<property name="name" value="Sidharth Sirohia"></property>
+	<property name="dept" value="Training"></property>
+</bean>
+
+<bean id="employee2" class="com.employeeInfo.EmployeeDetails">  
+	<property name="id" value="102"></property>  
+	<property name="name" value="Ritesh Naidu"></property>
+	<property name="dept" value="Ceo"></property>
+</bean>
+
+<bean id="employee3" class="com.employeeInfo.EmployeeDetails">  
+	<property name="id" value="103"></property>  
+	<property name="name" value="Priyanka"></property>
+	<property name="dept" value="Receptionist"></property>
+</bean>
+</beans>
